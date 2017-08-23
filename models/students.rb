@@ -47,7 +47,7 @@ class Student
     SqlRunner.run(sql)
   end
 
-  def find_house()
+  def house()
     sql = 'SELECT * FROM houses WHERE id = $1;'
     values = [@house_id]
     result = SqlRunner.run(sql, values)
