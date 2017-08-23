@@ -4,6 +4,13 @@
 <p>House: <%=  "#{@student.house.name}" %></p>
 <p>Age: <%=  "#{@student.age}" %></p>
 
-<p><a href="/hogwarts">Click here to go back to the student list</a></p>
+<form action="/hogwarts/<%= @student.id%>/edit">
+    <input type="submit" value="Edit Details" />
+</form>
+
+<form action="/hogwarts/<%= @student.id%>/delete" method="POST">
+    <input type="submit" value="Unenroll Student" />
+</form>
+
+<p><a href="/hogwarts/all">Click here to go back to the student list</a></p>
 <hr>
-Add Comment Collapse

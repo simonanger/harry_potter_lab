@@ -44,5 +44,14 @@ class House
     SqlRunner.run(sql)
   end
 
+  def update()
+    sql='UPDATE houses
+    SET (
+    name, logo) = ($1, $2)
+    WHERE id =$3'
+    values = [@name, @logo, @id]
+    SqlRunner.run(sql,values)
+  end
+
 
 end
