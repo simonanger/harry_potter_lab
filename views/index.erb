@@ -1,12 +1,13 @@
-<h1>!Welcome to Hogwarts!</h1>
+
 <h2>Please find the details of our allumni below</h2>
 
 <p><a href="/hogwarts/new">Click here to create a new student</a></p>
 
 <% for student in @students do %>
 
-  <p>Student Name:<%= student.first_name() %> <%= student.second_name() %></p>
+  <p>Student Name: <%= student.first_name() %> <%= student.second_name() %></p>
   <p>House: <%= student.house.name  %></p>
+  <p><img src="<%= student.house.logo %>" alt="house-logo">
   <p>Age: <%= student.age()  %></p>
   <p><a href="/hogwarts/<%= student.id %>">Show student details</a></p>
   <hr>

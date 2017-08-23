@@ -1,0 +1,26 @@
+
+body {
+  text-align: center;
+  background-color: #800028;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+a {
+  color: black
+}
+
+#magic {
+  color: #800000;
+  background-color: #800000;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+
+#logo {
+  height: 200px;
+  width: auto;
+}
